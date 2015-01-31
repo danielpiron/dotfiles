@@ -7,6 +7,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 " Plugins
+Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'pangloss/vim-javascript'
 Plugin 'digitaltoad/vim-jade'
@@ -69,6 +70,11 @@ set cursorline
 set nowrap
 set nobackup
 set noswapfile
+" Commands for doing diffs
+nnoremap <F7> [c
+nnoremap <F8> ]c
+
+
 "" Automatic commands
 if has("autocmd")
     " Enable file type detection
