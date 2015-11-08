@@ -4,6 +4,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'bling/vim-airline'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/nerdtree'
@@ -22,9 +23,14 @@ colorscheme zenburn
 syntax on
 
 " General System Settigs
-set noswapfile
 set encoding=utf-8
+set noswapfile
 set nu
+
+" Airline Settings
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Syntastic Settings
 set statusline+=%#warningmsg#
