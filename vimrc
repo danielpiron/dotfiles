@@ -40,11 +40,16 @@ let g:syntastic_check_on_wq = 0
 set backspace=indent,eol,start
 let g:SimpylFold_docstring_preview = 1
 let g:SimpylFold_fold_docstring = 0
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:$,tab:▸\ ,trail:·,extends:>,precedes:<
 set list
 
 " Custom keys
 let mapleader=","
-map <leader>nt :NERDTree<CR>
+map <F3> :NERDTreeToggle<cr>
 nnoremap <space> za
 nnoremap <esc><esc> :w<CR>
+
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
