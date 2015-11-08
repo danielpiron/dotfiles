@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " Plugins
 Plugin 'bling/vim-airline'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mustache/vim-mustache-handlebars'
@@ -16,6 +17,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
+Plugin 'fatih/vim-go'
 " Color schemes
 Plugin 'flazz/vim-colorschemes'
 
@@ -103,6 +105,7 @@ let mapleader = ","
 "" Nifty mappings for quickly editting vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>t :Dispatch nosetest<cr>
 inoremap jk <esc>
 iabbrev glup gulp
 
